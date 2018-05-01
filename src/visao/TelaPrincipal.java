@@ -42,6 +42,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menCadVeic = new javax.swing.JMenuItem();
         menCadCli = new javax.swing.JMenuItem();
         menCadProm = new javax.swing.JMenuItem();
+        menConsulta = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         menRel = new javax.swing.JMenu();
         menRelaServ = new javax.swing.JMenuItem();
         menAju = new javax.swing.JMenu();
@@ -84,6 +86,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menCad.setText("Cadastro");
 
+        menCadFunc.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
         menCadFunc.setText("Funcionario");
         menCadFunc.setEnabled(false);
         menCadFunc.addActionListener(new java.awt.event.ActionListener() {
@@ -123,6 +126,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menCad.add(menCadProm);
 
         Menu.add(menCad);
+
+        menConsulta.setText("Consultar");
+
+        jMenuItem1.setText("Veículos");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        menConsulta.add(jMenuItem1);
+
+        Menu.add(menConsulta);
 
         menRel.setText("Relatório");
         menRel.setEnabled(false);
@@ -270,6 +285,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktop.add(cliente);
     }//GEN-LAST:event_menCadCliActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        TelaConsultaV consultv = new TelaConsultaV();
+        consultv.setVisible(true);
+        desktop.add(consultv);
+
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -313,6 +336,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane desktop;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel lblData;
     public static javax.swing.JLabel lblUsuario;
     private javax.swing.JMenu menAju;
@@ -322,6 +346,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     public static javax.swing.JMenuItem menCadFunc;
     public static javax.swing.JMenuItem menCadProm;
     public static javax.swing.JMenuItem menCadVeic;
+    private javax.swing.JMenu menConsulta;
     private javax.swing.JMenu menOpc;
     private javax.swing.JMenuItem menOpcSair;
     public static javax.swing.JMenu menRel;
