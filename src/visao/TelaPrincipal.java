@@ -32,10 +32,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         desktop = new javax.swing.JDesktopPane();
-        jLabel2 = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         lblData = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         Menu = new javax.swing.JMenuBar();
         menCad = new javax.swing.JMenu();
         menCadFunc = new javax.swing.JMenuItem();
@@ -44,6 +44,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menCadProm = new javax.swing.JMenuItem();
         menConsulta = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        menuVenda = new javax.swing.JMenu();
+        menVendaFechar = new javax.swing.JMenuItem();
         menRel = new javax.swing.JMenu();
         menRelaServ = new javax.swing.JMenuItem();
         menAju = new javax.swing.JMenu();
@@ -73,8 +75,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGap(0, 480, Short.MAX_VALUE)
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo_StrongMaq.png"))); // NOI18N
-
         lblUsuario.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         lblUsuario.setText("Usuario");
 
@@ -83,6 +83,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Você está logado no sistema como");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo_StrongMaq.png"))); // NOI18N
 
         menCad.setText("Cadastro");
 
@@ -138,6 +140,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menConsulta.add(jMenuItem1);
 
         Menu.add(menConsulta);
+
+        menuVenda.setText("Venda");
+
+        menVendaFechar.setText("Fechar Venda");
+        menuVenda.add(menVendaFechar);
+
+        Menu.add(menuVenda);
 
         menRel.setText("Relatório");
         menRel.setEnabled(false);
@@ -196,17 +205,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addComponent(lblUsuario)))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(11, 11, 11)
                         .addComponent(jLabel1)
@@ -214,9 +221,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addComponent(lblUsuario)
                         .addGap(37, 37, 37)
                         .addComponent(lblData)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32))))
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(931, 561));
@@ -351,5 +358,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menOpcSair;
     public static javax.swing.JMenu menRel;
     private javax.swing.JMenuItem menRelaServ;
+    private javax.swing.JMenuItem menVendaFechar;
+    private javax.swing.JMenu menuVenda;
     // End of variables declaration//GEN-END:variables
 }
