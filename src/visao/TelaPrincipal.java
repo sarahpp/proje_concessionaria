@@ -100,6 +100,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel1.setBounds(655, 22, 238, 17);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/9.jpg"))); // NOI18N
+        jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 3, true));
         getContentPane().add(jLabel3);
         jLabel3.setBounds(630, 0, 280, 430);
 

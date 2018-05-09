@@ -40,22 +40,22 @@ public class TelaSobre extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Sistema para Concessionárias ");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(30, 70, 280, 20);
+        jLabel1.setBounds(10, 70, 280, 30);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Desenvolvido por Equipe StrongMAQ");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(110, 140, 255, 17);
+        jLabel2.setBounds(110, 150, 255, 17);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Sob a licença GPL");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(290, 220, 106, 15);
+        jLabel3.setBounds(280, 220, 106, 15);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(90, 165, 0, 0);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/9.jpg"))); // NOI18N
-        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 3));
+        jLabel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 3, true));
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 400, 300);
 

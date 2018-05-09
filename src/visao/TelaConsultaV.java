@@ -92,6 +92,7 @@ public class TelaConsultaV extends javax.swing.JInternalFrame {
         jButton1.setBounds(490, 370, 65, 23);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/9.jpg"))); // NOI18N
+        jLabel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 3, true));
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 600, 450);
 

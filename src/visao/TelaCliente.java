@@ -397,10 +397,11 @@ public class TelaCliente extends javax.swing.JInternalFrame {
         txtCliId.setBounds(80, 200, 150, 20);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/9.jpg"))); // NOI18N
+        jLabel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 3, true));
         getContentPane().add(jLabel14);
-        jLabel14.setBounds(0, 0, 600, 450);
+        jLabel14.setBounds(0, 0, 580, 450);
 
-        setBounds(0, 0, 614, 478);
+        setBounds(0, 0, 598, 479);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtCliNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCliNomeActionPerformed

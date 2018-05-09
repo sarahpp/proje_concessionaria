@@ -194,6 +194,7 @@ public class TelaPromocoes extends javax.swing.JInternalFrame {
         jTextField3.setBounds(210, 380, 150, 20);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/9.jpg"))); // NOI18N
+        jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 3, true));
         getContentPane().add(jLabel7);
         jLabel7.setBounds(0, 0, 600, 450);
 
